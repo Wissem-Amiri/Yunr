@@ -1,0 +1,59 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Design Tokens ── */
+:root {
+  /* Brand */
+  --purple:        #7C3AED;
+  --purple-hover:  #6D28D9;
+  --purple-light:  #EDE9FE;
+  --purple-border: #C4B5FD;
+
+  /* Text */
+  --text-dark:  #101828;
+  --text-gray:  #475467;
+  --text-light: #98A2B3;
+
+  /* Surfaces */
+  --bg:         #FFFFFF;
+  --bg-soft:    #F9FAFB;
+  --border:     #D0D5DD;
+
+  /* States */
+  --success:     #12B76A;
+  --error:       #F04438;
+  --warning:     #F79009;
+  --green-light: #DCFCE7;
+  --red-light:   #FEF2F2;
+
+  /* Font */
+  --font: 'Sora', sans-serif;
+}
+
+/*Base */
+html { font-size: 16px; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg-soft);
+  color: var(--text-dark);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: var(--font); }
+input, select, textarea { font-family: var(--font); }
+
+/*Scrollbar---*/
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-light); }
